@@ -1,0 +1,17 @@
+/* have to use this type of notes within the style tag */
+        /* p is our slector, if you want to group selector then put "," color is our propery and chartreuse is our value */
+        p,h1 {
+            
+            color:chartreuse;
+            /* this is font size by % - 3 times default size
+            font-size: 300%; */
+            font-size: 1.5em; /* 50% bigger than default */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+         } 
+/* this allows you to specify which element to sytle, this called decentant selector */
+         p a {color: goldenrod;}
+         /* this is to style an element using an ID to identify the element*/
+         #firstlink {color: aquamarine;}
+         /* you can use class to do the same as ID but class can be used over and over while ID can only be used once*/
+         .redtext {color: crimson;}
