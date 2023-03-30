@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Skills</title>
+        <style>
+            td, th {border:1px solid black}
+            h1 {text-align: center;}
+            .gaming {
+                width: 11%;
+            }
+            .fencing { width: 11%;}
+            .running { width: 11%;}
+            .archery { width: 11%;}
+            .food { width: 11%;}
+            .flexrow {display: flex;}
+            .sidebar {
+                background-color: coral;
+                border-radius: 5%;
+                padding-left: 10%;
+                padding: 10%;
+            }
+            .flexrow2 {display: flex;
+            padding: 5%;}
+            .box2 {flex-basis: 30%;}
+            p {padding-left: 10%;}
+            
+        </style>
+        <link rel="stylesheet" href="skills.css">
+    </head>
+    <body>
+        
+        <nav>
+            <a href="index.html" target="_blank">Home</a> 
+            <span>|</span>
+            <a href="contact.html" target="_blank">Contact</a> 
+            <span>|</span>
+            <a href="skills.html" target="_blank">Skills</a> 
+    
+        </nav>
+        <h1> List of my skills</h1>
+        <p>This is a list of my skils. These skills are broken down between techinal, physical, and social. There are no patterns to my hobbies just simply what I like to do.</p>
+
+       
+
+    <div class="flexrow2">
+        <div> 
+            <div class="flexrow">
+                <div>
+                    <img class="gaming" src="headset-solid.svg" alt="icon of gaming">
+                    <br>
+                    <span>Video Gaming</span>
+                </div>
+                <div>
+                    <img class="fencing" src="medal-solid.svg" alt="fencing icon">
+                     <br>
+                     <span>Sport Fencing</span>
+                </div>
+                <div>
+                    <img class="running" src="person-running-solid.svg" alt="running person">
+                    <br>
+                    <span>Running</span>
+                </div>
+                <div>
+                    <img class="archery" src="bullseye-solid.svg" alt="archery target">
+                    <br>
+                    <span>Sport Archery</span>
+                </div>
+                <div>
+                    <img class="food" src="utensils-solid.svg" alt="food icon">
+                    <br>
+                    <span>Cooking</span>
+                </div>
+    
+            </div>
+        </div>
+        <div class="box2">
+                
+             <aside class="sidebar">
+                  <h2>Other Skills</h2>
+                      <ul class="list">
+                        <li><span>Coding</span></li>
+                        <li> <span>Coaching</span></li>
+                        <li> <span>Teaching</span> </li>
+                        <li><span>Shooting</span></li>
+                    </ul>
+             </aside>
+
+        </div>
+    </div>
+
+
+
+<!--
+        <table>
+            <caption>My list and rank of hobies</caption>
+            <tr>
+                <th>Hobby</th>
+                <th>Type of Skill</th>
+                <th>Competency</th>
+            </tr>
+
+            <tr class="evenrow">
+                <td>coding</td>
+                <td>technical</td>
+                <td>low</td>
+
+            </tr>
+
+            <tr>
+                <td>fecning</td>
+                <td>physical</td>
+                <td>medium</td>
+
+            </tr>
+
+            <tr class="evenrow">
+                <td>running</td>
+                <td>physical</td>
+                <td>high</td>
+
+            </tr>
+
+            <tr>
+                <td>gaming</td>
+                <td>technical</td>
+                <td>high</td>
+
+            </tr>
+
+            <tr class="evenrow">
+                <td>coaching</td>
+                <td>social</td>
+                <td>high</td>
+
+            </tr>
+
+            <tr>
+                <td>cooking</td>
+                <td>physical</td>
+                <td>medium</td>
+
+            </tr>
+
+            <tr class="evenrow">
+                <td>teaching</td>
+                <td>social</td>
+                <td>medium</td>
+
+            </tr>
+
+            <tr>
+                <td>archery</td>
+                <td>physical</td>
+                <td>low</td>
+
+            </tr>
+
+            <tr class="evenrow">
+                <td>shooting</td>
+                <td>physical</td>
+                <td>high</td>
+
+            </tr>
+
+        </table>
+        -->
+            <br>
+        <form action="https://formspree.io/f/mgebakbq" method="post"> 
+            <!--THis is the text box-->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+            <br>
+            <!--This will be the area where you say your hobbie-->
+            <label for="hobbies">What is your hobby</label>
+            <br>
+            <textarea id="hobbies" name="hobbies" rows="3" cols="50"></textarea>
+            <br>
+
+            <!--this will be the radio where the choose if the skill is physcal, social, or technical-->
+            <input type="radio" id="physical" name="physical" value="Physical hobby">
+            <label for="physical">physical</label>
+            <input type="radio" id="social" name="social" value="social hobby">
+            <label for="social">social</label>
+            <input type="radio" id="technical" name="technical" value="technical hobby">
+            <label for="technical">technical</label>
+            <br>
+            <!-- this will be the submission button-->
+            <input type="submit" value="submit hobby">
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+        
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
