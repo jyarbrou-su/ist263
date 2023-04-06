@@ -7,11 +7,13 @@ nav {background-color: #171717;
 nav a { color: #7fd221;}
 nav a:hover {background-color:  #342E2E;}
 nav {padding: 10px;}
-nav {margin-bottom: 30px;}
+nav {margin-bottom: 30px;
+color: #7fd221 ;}
 @media only screen and (max-width:600px) {
 nav a {max-width: 100%;
 display: block;
 padding: 1%;}
 nav span {display: none;}
+
 
 }
