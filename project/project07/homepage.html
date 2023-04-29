@@ -62,6 +62,7 @@
         }
         body {
             background-color: #454545 ;
+            font-size: 1em;
         }
         p,h1,h2,h3 {
             color: #FFA166;
@@ -100,6 +101,18 @@
                
                 
         }
+        .skip {
+            background-color:#ffbf00 ;
+            padding: 5px;
+            border: 1xp solid #000000;
+            text-decoration: none;
+            position: absolute; /* position element relative to top left of viewport */
+            top: 10px;
+            left: -999px; /* push it off the left side of screen */
+        }
+        .skip:focus {
+            left: 10px; /* bring it back when they tab to it */
+        }
        
     </style>
     <script>
@@ -120,14 +133,16 @@ function closeHam() {
     </script>
 </head>
 <body>
+    <a href="#main" class="skip" tabindex="1">Skip to Content</a>
     <nav class="navbuttons" id="navbuttons">
-        <a href="homepage.html" target="_blank">Home</a> 
+       
+        <a href="homepage.html" target="_blank" tabindex="2">Home</a> 
         
-        <a href="history.html" target="_blank">History</a> 
+        <a href="history.html" target="_blank" tabindex="3">History</a> 
         
-        <a href="culture.html" target="_blank">Culture</a> 
+        <a href="culture.html" target="_blank" tabindex="4">Culture</a> 
         
-        <button id="closebutton" onclick="closeHam();">&#10006;</button>
+        <button id="closebutton"  onclick="closeHam();">&#10006;</button>
     </nav>
   
 <!--
@@ -145,19 +160,20 @@ function closeHam() {
         
     </nav>
      -->
-    <button id="hamburger" onclick="openHam();">&#9776;</button>
+    <button id="hamburger"  onclick="openHam();">&#9776;</button>
     <header>
-    <h1 class="center">Fencing</h1>
+        
+    <h1 class="center" id="main">Fencing</h1>
     <p class="center">Hello all, this webpage was designed and created for the beginner fencer or someone who just wants to learn a little about the sport and the History. There are three weapons in sport fencing. These weapons are the Foil, Epee, and Sabre. Each of these weapons are used in different ways with different rules. </p>
     </header>
 
 <section>
     <div class="foilflex">
 
-        <div><img class="foilpic" src="../images/Foil.jpg" alt="picture of mask and foil"></div>
+        <div><img class="foilpic" src="../images/Foil.jpg" alt=" mask and foil"></div>
     
         <div class="foilpadding">
-            <h2>THE FOIL</h2>
+            <h2 tabindex="5">THE FOIL</h2>
             
            <p> The first weapon we will look is the foil. The foil was the first weapon in fencing and is often considered the staple of what every beginner should try first. Of the three weapons the foil can be identified by the blades’ rectangular shape. It is the only of the three weapons to have a square edge. Moving on, the foil blade can be broken down into there parts: the foible (the bendy tip), the medium (the middle of the blade), and the forte (the base of the blade and the most stable). These parts of the blade are the same with every weapon and are very important to how you use them. For example, if you try and control your opponent’s blade with your foible on their forte, it will be very difficult since you are using your weak part of the blade against their strong.</p>
            <h3> The Rules of Foil</h3>
@@ -172,11 +188,11 @@ function closeHam() {
 <section>
     <div class="epeeflex">
     
-        <div><img class="epeepic" src="../images/epeefix.jpg" alt="This is a picture of an epee"></div>
+        <div><img class="epeepic" src="../images/epeefix.jpg" alt="an epee"></div>
 
 
         <div class="epeepadding">
-            <h2>The Epee</h2>
+            <h2 tabindex="6">The Epee</h2>
             <p>The epee is the easiest of the weapons to learn. This weapon can be identified by the triangle blade and large hand guard. This is a stabbing weapon the same as foil. However, the epee, unlike the foil, does not have a target area or right of way. What does this mean? This means you can stab your opponent anywhere on the body and get a point. This also mean if you and your opponent both stab each other at the same time, you both get a point.</p>
 
         </div>
@@ -187,10 +203,10 @@ function closeHam() {
     <section>
     <div class="sabreflex">
         <aside>
-        <div><img class="sabrepic" src="../images/sabre.jpeg" alt="Picture of a sabre"></div>
+        <div><img class="sabrepic" src="../images/sabre.jpeg" alt="a sabre"></div>
         </aside>
         <div class="sabrepadding">
-            <h2>The Sabre</h2>
+            <h2 tabindex="7">The Sabre</h2>
             <p>The sabre is considered the fastest and hardest of the weapons to learn. The weapon can be identified by its the thin edge and a hand guard that connect to the pommel(the base of the sword). With the sabre you score points with both slashing and stabbing. The sabre has both target area and right of way the same as foil. However, the target area for sabre is from the waist up where the foil is just the torso. The sabre is fast because each person shoots off the start position to swing first because they are trying to gain right of way. They also are trying to strike first because it is exponentially more difficult to defend your whole upper body from a slashing strike. The general rule of sabre is the faster person who strikes first wins.</p>
             </div>
     </div>
