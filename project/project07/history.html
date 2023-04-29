@@ -5,57 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fencing History</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Open+Sans&display=swap" rel="stylesheet">
     <style>
+         nav {
+            background-color:#FFA166;
+            color: black;
+            border-radius: 10%;
+            display: none;
+            margin: 10px;
+        }
+        nav a {
+            color: black;
+            display: block;
+            padding: 10px;
+        }
+        body {
+            background-color: #454545 ;
+        }
+        p,h1,h2,h3 {
+            color: #FFA166;
+    
+        }
+        h1,h2,h3 {
+            font-family: 'Castoro Titling', cursive;
+        }
         .headpicture {
             
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 100%;
+            height: auto;
         }
-
+        .underheader {
+            text-align: center;
+        }
+        .firstduel {
+            display: flex;
+           
+        }
+        .fdtext {
+            padding: 5px;
+        }
+        .secondduel {
+            display: flex;
+          
+        }
+        .sdtext {
+            padding: 5px;
+        }
+        h1 {text-align: center;}
+        .fd, .sd {
+            margin: 10px;
+            max-width: 268px;
+        }
+        .navbuttons {
+           width: 15%;
+        }
+        @media only screen and (max-width:800px) {
+            .firstduel {
+                display: initial ;
+        }
+            .secondduel {
+                display: initial;
+                
+            }
+            
+            .fd {
+                max-width: 100%;
+            }
+            .sd {
+                max-width: 100%;
+            }
+        }
     </style>
+    <script>
+        function openHam() {
+      document.getElementById("navbuttons").style.display = "block";
+      document.getElementById("hamburger").style.display = "none";
+      document.getElementById("closebutton").style.display = "block";
+    }
+    
+    function closeHam() {
+      document.getElementById("navbuttons").style.display = "none";
+      document.getElementById("hamburger").style.display = "block";
+      document.getElementById("closebutton").style.display = "none";
+    
+    }
+    
+    
+        </script>
 </head>
 <body>
-    <nav>
+    <nav class="navbuttons" id="navbuttons">
         <a href="homepage.html" target="_blank">Home</a> 
-        <span>|</span>
+        
         <a href="history.html" target="_blank">History</a> 
-        <span>|</span>
+        
         <a href="culture.html" target="_blank">Culture</a> 
+        
+        <button id="closebutton" onclick="closeHam();">&#10006;</button>
     </nav>
-    <article>
+  
+        
+    </nav>
+    <button id="hamburger" onclick="openHam();">&#9776;</button>
+    <header>
     <H1>Fencing History</H1>
-    
-    
+    </header>
+    <section>
     <div>
-        <div><img src="../images/histheadernew.jpeg" alt="fencing club picture" class="headpicture"></div>
-        <div>
+        <div><img src="../images/histheadernewfix.jpg" alt="fencing club picture" class="headpicture"></div>
+        <div class="underheader">
 <h2>Fencing Before The Sport</h2>
- <p>The history of fencing is very broad. Some might define fencing as the first practice dueling that took place  thousands of years ago; while others just refer to the European sword fighting. For the purposes of this web page, we are just going to focus on the European history of fencing. </p>
+ <p>The history of fencing is very broad. Some might define fencing as the first practice dueling that took place  thousands of years ago; while others just refer to the European sword fighting. For the purposes of this brief history, we are just going to focus on the European history of fencing. </p>
 
-<P>By the end of the 15th century fencing guilds were spread around all of Europe. These guilds used different weapons and techniques that were kept secret so as to have an edge on an opponent in a duel. However, towards the end of the 16th century when armor was being phased out due to gun powder, the Italians came up with the rapier. The rapier was excellent for point control and quick effective thrusts on unarmored opponents. This then turned into a fad across all of Europe until the latter half of the 17th century. At this time King Louis XIV of France was setting fashion trends and the new trend of stockings and breeches did not mix well with the fashion of the rapier. This led to the creation of the lighter court sword. This sword was very similar to the rapier but was slightly shorter and nimbler. The practice sword that was used in fencing guilds was called the foil. This is where we get the current modern foil.</P>
+
 
         </div>
     </div>
+    </section>
 
-    <div>
-        <div><img src="../images/historicalduel.jfif" alt="duel picture"></div>
-        <div>
+    <section>
+
+    <div class="firstduel">
+        <div><img src="../images/historicalduel.jfif" alt="duel picture" class="fd"></div>
+        <div class="fdtext">
+            <P>By the end of the 15th century fencing guilds were spread around all of Europe. These guilds used different weapons and techniques that were kept secret so as to have an edge on an opponent in a duel. However, towards the end of the 16th century when armor was being phased out due to gun powder, the Italians came up with the rapier. The rapier was excellent for point control and quick effective thrusts on unarmored opponents. This then turned into a fad across all of Europe until the latter half of the 17th century. At this time King Louis XIV of France was setting fashion trends and the new trend of stockings and breeches did not mix well with the fashion of the rapier. This led to the creation of the lighter court sword. This sword was very similar to the rapier but was slightly shorter and nimbler. The practice sword that was used in fencing guilds was called the foil. This is where we get the current modern foil.</P>
             
            <p>In the 18th century when the firearms became much more accurate, dueling with the sword died down. It wasn’t until the late 19th century however that the epee was made. The epee was made for those who were still keen on solving conflicts with a sword. The rules for both fencing and duels with an epee were just to stab the target anywhere. The person who drew first blood was the winner.
             The last weapon, the sabre, did not come about until the late 18th century when the Hungarians implemented the heavy sabre. This weapon was widely adopted because the sabre was the main military sidearm during that time. However, the sabre was latter changed by the Italians to a light sabre for ease of use in dismounted combat.</p> 
             
              </div>
     </div>
+</section>
 
-    <div>
-        <div><img src="../images/1800duel.jpg" alt="picture of 1800 duel"></div>
-        <div>
+<section>
+    <div class="secondduel">
+        <div><img src="../images/1800duel.jpg" alt="picture of 1800 duel" class="sd"></div>
+        <div class="sdtext">
             <h2>The Sport</h2>
             <p> During the 1880s when fencing was reaching a great crescendo a fencing master in France made an official association of rules and regulation. Ten years later about every wester country, including the United States, had their own set of association and rules. The first Olympic games with fencing took place in 1904 were only the foil was used. The following games in 1908 implemented the epee and sabre. There were still some issues however. There were no concrete international standards on the length, weight, and rules of the weapons. This caused two main countries Italy and France to back out of the Olympics in protest. As a result, in 1913 the Federation Internationale d’Escrime was created and was used as the standard for all fencing rules and regulations. To this day fencing remains the same with minor changes to the technology used to score points.</p></div>
     </div>
+</section>
 
-</article>
 </body>
 </html>

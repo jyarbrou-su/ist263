@@ -33,25 +33,32 @@
         }
         .foilpic {
             max-width: 230px;
+            margin: 5px;
         }
         .epeepic {
             max-width: 230px;
+            margin: 5px;
         }
         .sabrepic {
             max-width: 230px;
+            margin: 5px;
         }
         .center {
             text-align: center;
         }
         nav {
-            display: flex;
-            justify-content: space-around;
+            
             background-color:#FFA166;
             color: black;
             border-radius: 10%;
+            display: none;
+            margin: 10px;
         }
         nav a {
             color: black;
+            display: block;
+            padding: 10px;
+         
         }
         body {
             background-color: #454545 ;
@@ -63,7 +70,13 @@
         h1,h2,h3 {
             font-family: 'Castoro Titling', cursive;
         }
-        
+        #closebutton {
+            display: none;
+        }
+        .navbuttons {
+           width: 20%;
+        }
+      
         @media only screen and (max-width:800px) {
                 .foilflex {
                     display: initial;
@@ -83,40 +96,41 @@
                 .sabrepic {
                     max-width: 100%;
                 }
-                .navbuttons {
-                    display: none;
-                }
-                nav {
-                    display: initial;
-                    text-align: right;
-                }
-                nav a {
-                    color: #FFA166;
-                    
-                }
-                nav div {
-                    margin: 4px;
-                }
+              
+               
                 
         }
-        @media only screen and (min-width: 801px) {
-                .navsmall {
-                    display: none;
-                }
-
-            }
+       
     </style>
+    <script>
+    function openHam() {
+  document.getElementById("navbuttons").style.display = "block";
+  document.getElementById("hamburger").style.display = "none";
+  document.getElementById("closebutton").style.display = "block";
+}
+
+function closeHam() {
+  document.getElementById("navbuttons").style.display = "none";
+  document.getElementById("hamburger").style.display = "block";
+  document.getElementById("closebutton").style.display = "none";
+
+}
+
+
+    </script>
 </head>
 <body>
-    <nav class="navbuttons">
+    <nav class="navbuttons" id="navbuttons">
         <a href="homepage.html" target="_blank">Home</a> 
-        <span></span>
+        
         <a href="history.html" target="_blank">History</a> 
-        <span></span>
+        
         <a href="culture.html" target="_blank">Culture</a> 
         
+        <button id="closebutton" onclick="closeHam();">&#10006;</button>
     </nav>
-
+  
+<!--
     <nav class="navsmall">
         <div>
         <a href="homepage.html" target="_blank">Home</a> 
@@ -127,8 +141,10 @@
         <div>
         <a href="culture.html" target="_blank">Culture</a> 
          </div>
+        -->
         
     </nav>
+    <button id="hamburger" onclick="openHam();">&#9776;</button>
     <header>
     <h1 class="center">Fencing</h1>
     <p class="center">Hello all, this webpage was designed and created for the beginner fencer or someone who just wants to learn a little about the sport and the History. There are three weapons in sport fencing. These weapons are the Foil, Epee, and Sabre. Each of these weapons are used in different ways with different rules. </p>
