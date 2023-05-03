@@ -5,34 +5,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fencing Culture</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+         nav {
+            background-color:#FFA166;
+            color: black;
+            border-radius: 10%;
+            display: none;
+            margin: 10px;
+        }
+        nav a {
+            color: black;
+            display: block;
+            padding: 10px;
+        }
+        body {
+            background-color: #454545 ;
+            font-size: 1em;
+        }
+        p,h1,h2,h3 {
+            color: #FFA166;
+    
+        }
+        h1,h2,h3 {
+            font-family: 'Castoro Titling', cursive;
+        }
+        .headpicture {
+            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: auto;
+            
+        }
+        .underheader {
+            text-align: center;
+        }
+   
+      
+        .firstduel {
+            display: flex;
+           
+        }
+        .fdtext {
+            padding: 5px;
+        }
+        .secondduel {
+            display: flex;
+          
+        }
+        .sdtext {
+            padding: 5px;
+        }
+        h1 {text-align: center;}
+        .heading {
+            animation: slideIn 2s ease forwards;
+            opacity: 0;
+            
+           
+        }
+        @keyframes slideIn {
+            from {
+                transform: translate(-100%);
+            }
+            to { 
+               
+                transform: translate(0%);
+                opacity: 1;
+            }
+        }
+        .fd, .sd {
+            margin: 10px;
+            max-width: 268px;
+        }
+        .navbuttons {
+           width: 15%;
+        }
+        @media only screen and (max-width:800px) {
+            .firstduel {
+                display: initial ;
+        }
+            .secondduel {
+                display: initial;
+                
+            }
+            
+            .fd {
+                max-width: 100%;
+            }
+            .sd {
+                max-width: 100%;
+            }
+        }
+        .skip {
+            background-color:#ffbf00 ;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute; /* position element relative to top left of viewport */
+            top: 10px;
+            left: -999px; /* push it off the left side of screen */
+        }
+        .skip:focus {
+            left: 10px; /* bring it back when they tab to it */
+        }
+    </style>
+    <script>
+ function openHam() {
+      document.getElementById("navbuttons").style.display = "block";
+      document.getElementById("hamburger").style.display = "none";
+      document.getElementById("closebutton").style.display = "block";
+    }
+    
+    function closeHam() {
+      document.getElementById("navbuttons").style.display = "none";
+      document.getElementById("hamburger").style.display = "block";
+      document.getElementById("closebutton").style.display = "none";
+    
+    }
+    
+    </script>
 </head>
 <body>
-    <nav>
-        <a href="homepage.html" target="_blank">Home</a> 
-        <span>|</span>
-        <a href="history.html" target="_blank">History</a> 
-        <span>|</span>
-        <a href="culture.html" target="_blank">Culture</a> 
+    <a href="#main" class="skip" tabindex="1">Skip to Content</a>
+    <nav class="navbuttons" id="navbuttons">
+        <a href="homepage.html" target="_blank" tabindex="2">Home</a> 
+        
+        <a href="history.html" target="_blank" tabindex="3">History</a> 
+        
+        <a href="culture.html" target="_blank" tabindex="4">Culture</a> 
+        <button id="closebutton" onclick="closeHam();">&#10006;</button>
     </nav>
-    <h1>Fencing Culture</h1>
-    <img src="../images/koreanfencingfix.jpg" alt="Picture of korean fencing team">
+    <button id="hamburger" onclick="openHam();">&#9776;</button>
 
-    <div>
-        <div><img src="../images/sportfencing.jpg" alt="picture of a bout"></div>
-        <div>
-            <h2>Roots</h2>
+    <header>
+    <h1 class="heading">Fencing Culture</h1>
+    <img class="headpicture" src="../images/koreanfencingfix.jpg" alt="korean fencing team">
+    </header>
+
+    <section>
+    <div class="underheader">
+    <h3 id="main" tabindex="5">Fencing Belongs To Everyone</h3>
+    <p>We become not a melting pot but a beautiful mosaic. Different people, different beliefs, different yearnings, different hopes, different dreams -Jimmy Carter</p>
+    </div>
+    </section>
+
+   <section>
+
+    <div class="firstduel">
+        <div><img class="fd" src="../images/sportfencing.jpg" alt="fencing bout"></div>
+        <div class="fdtext">
+            <h2 tabindex="6">Roots</h2>
+            <p>
             Culturally Fencing changed with the times. Historically, fencing started with the rapier and was later changed to the foil because of a fashion design. Epee was implemented as a more brutal realistic dueling weapon. Finally, the sabre was introduced by the Hungarians that wanted something closer to battlefield use. 
             How did the world adapt these weapons? The short answer, colonialism. These weapons were adopted and implemented around the world. However, in those same places that adopted the sport were also places that had been European colonies for some time. For example, the Koreans had just stared adopting sabre and epee fencing schools just before 1904 when the Japo-Russo war started. On the other side of the world The United States was always apart of fencing. Fencing was brought over with the original settlers and was practiced in the States even after the American Revolution. 
             A different perspective on this was that European warfare was more advance than any other country at the time. This would often lead to foreign nations importing soldiers and trainers from Europe to train their army. This is what lead to many armies being armed with sabres rather than their tradition swords. This can be seen in both Japan and China.
-            </div>
+        </p>
+        </div>
     </div>
+    </section>
 
-    <div>
-        <div><img src="../images/deeplunge.jpg" alt="picture of a deep lunge"></div>
-        <div>
-            <h2>How Did Culture Tie Into The Sport?</h2>
-            Now that Fencing or even the weapons for fencing were now dispersed across the globe, a universal standard was hard to come by. The French did not agree with most other counties regarding target area and game courtesies. This also became a problem with the Italians with the lengths of the blades. Italians had always favored longer blades since the longer rapier was created in Italy. This was all remedied on the sports level in 1913 with the creation of Federation Internationale d’Escrime.</div>
+    <section>
+
+    <div class="secondduel">
+        <div><img class="sd" src="../images/deeplunge.jpg" alt="deep lunge"></div>
+        <div class="sdtext">
+            <h2 tabindex="7">How Did Culture Tie Into The Sport?</h2>
+        <p>
+            Now that Fencing or even the weapons for fencing were now dispersed across the globe, a universal standard was hard to come by. The French did not agree with most other counties regarding target area and game courtesies. This also became a problem with the Italians with the lengths of the blades. Italians had always favored longer blades since the longer rapier was created in Italy. This was all remedied on the sports level in 1913 with the creation of Federation Internationale d’Escrime.
+        </p>
+        </div>
     </div>
+    </section>
 
 
 </body>

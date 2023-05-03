@@ -26,6 +26,7 @@
         }
         body {
             background-color: #454545 ;
+            font-size: 1em;
         }
         p,h1,h2,h3 {
             color: #FFA166;
@@ -60,6 +61,22 @@
             padding: 5px;
         }
         h1 {text-align: center;}
+        .heading {
+            animation: slideIn 2s ease forwards;
+            opacity: 0;
+            
+           
+        }
+        @keyframes slideIn {
+            from {
+                transform: translate(-100%);
+            }
+            to { 
+               
+                transform: translate(0%);
+                opacity: 1;
+            }
+        }
         .fd, .sd {
             margin: 10px;
             max-width: 268px;
@@ -130,8 +147,9 @@
     
     <button id="hamburger" onclick="openHam();">&#9776;</button>
     <header>
-    <H1>Fencing History</H1>
+    <H1 class="heading">Fencing History</H1>
     </header>
+    
     <section>
     <div>
         <div><img src="../images/histheadernewfix.jpg" alt="fencing club picture" class="headpicture"></div>
